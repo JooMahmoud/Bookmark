@@ -1,0 +1,69 @@
+@media screen and (max-width: 576px) {
+    main h1::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 25%;
+        left: 132px;
+        bottom: 10px;
+        background-color: #fec260;
+        transition: height 350ms;
+        z-index: -1;
+      }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+ main h1::before {
+    content: "";
+    position: absolute;
+    width: 52%;
+    height: 25%;
+    left: 124px;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+ main h1::before {
+    content: "";
+    position: absolute;
+    width: 39%;
+    height: 25%;
+    left: 211px;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+ main h1::before {
+    content: "";
+    position: absolute;
+    width: 29.5%;
+    height: 25%;
+    left: 331px;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+ main h1::before {
+    content: "";
+    position: absolute;
+    width: 24%;
+    height: 25%;
+    left: 423px;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+}

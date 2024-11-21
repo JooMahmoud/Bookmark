@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark</title>
+    <link rel="stylesheet" href="CSS/all.min.css"/>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/media.css">
+  </head>
+  <body>
+    <main>
+      <div
+        class="container d-flex flex-column justify-content-center align-content-center">
+        <h1 class="py-2 text-center position-relative">Bookmarker</h1>
+        <table class="table mt-4">
+          <div class="bookmark-body p-3 py-4 mt-5 d-flex flex-column justify-content-center gap-4">
+            <h2 class="text-center">
+              <i class="fa-solid fa-bookmark"></i>
+              Bookmark your favorite sites
+              <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="mb-3">
+              <label for="siteName" class="form-label"><i class="fa-solid fa-book-bookmark p-8"></i>Site Name</label>
+              <input
+              oninput="validationsiteName()"
+                type="text"
+                class="form-control"
+                id="siteName"
+                placeholder="Bookmark Name"
+              />
+            </div> 
+  
+            <div class="mb-3">
+              <label for="siteURL" class="form-label"><i class="fa-solid fa-link p-8"></i>Site URL</label>
+              <input
+              oninput="validationsiteURL()"
+                type="text"
+                class="form-control"
+                id="siteURL"
+                placeholder="Website URL"
+              />
+            </div>
+
+            <button onclick="addsite()" class="btn btn-danger w-10 m-auto">
+              Submit
+            </button>
+
+          </div>
+            
+          <thead>
+            <tr>
+              <th class="text-center" scope="col">index</th>
+              <th class="text-center" scope="col">Website Name</th>
+              <th class="text-center" scope="col">Visit</th>
+              <th class="text-center" scope="col">Delete</th>
+            </tr>
+          </thead>
+
+          <tbody id="rowdata">
+             
+          </tbody>
+
+        </table>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
